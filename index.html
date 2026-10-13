@@ -6,25 +6,85 @@
 </head>
 <body>
     <header>
-        <container>
+        
         <img src="img/logo.png" alt="Logo">
         <h1>Mi sitio web</h1>
         <p>Aprendiendo desarrollo web</p>
-        </container>
         
     </header>
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Galería</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
     <main>
-        <section> ... </section>
+        <section> 
+            <h2>Bienvenido</h2>
+            <p>Esta es la página principal de mi sitio web.</p>
+            <p>Aquí irá el contenido más importante</p>
+
+            <div class="titulo">
+                <img src="img/tarjeta1.jpg" alt="Tarjeta 1">
+                <h3>Título 1</h3>
+                <p>Breve descripción del contenido</p>
+            </div>
+            <div class="titulo">
+                <img src="img/tarjeta2.jpg" alt="Tarjeta 2">
+                <h3>Título 2</h3>
+                <p>Breve descripción del contenido</p>
+            </div>
+            <div class="primer-titulo">
+                <img src="img/tarjeta3.jpg" alt="Tarjeta 3">
+                <h3>Título 3</h3>
+                <p>Breve descripción del contenido</p>
+            </div>
+        </section>
+        <section>
+            <h2>Últimas noticias</h2>
+            <ul>
+                <li>Noticia 1</li>
+                <li>Noticia 2</li>
+                <li>Noticia 3</li>
+            </ul>
+        </section>
+        
     </main>
-    <aside> ... </aside>    
-    <footer> ... </footer>
+    <aside>
+        <section>
+            <h2>Información</h2>
+            <ul>
+                <li>Enlace 1</li>
+                <li>Enlace 2</li>
+                <li>Enlace 3</li>
+            </ul>
+        </section> 
+        <section>
+            <h2>Contacto</h2>
+            <form action="formulario.php" method="POST">
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                </p>
+
+                <p>
+                    <label for="correo">Correo:</label>
+                    <input type="email" name="correo" placeholder="Tu correo" required>
+                </p>
+
+                <p>
+                    <label for="mensaje">Mensaje:</label>
+                    <input type="text" name="mensaje" placeholder="Tu mensaje" required>
+                </p>
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+    </aside>    
+    <footer> 
+        <p>&copy; 2025 Mi sitio web. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
