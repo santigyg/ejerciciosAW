@@ -1,0 +1,50 @@
+header{
+    /* colocar objetos a distancia en horizontal y poner tamaño de caja */
+    display:flex;
+    flex-wrap: wrap;
+    gap: 300px;
+    
+    /* alinear objetos en el centro de la caja */
+    align-items: center;
+    /* poner colores y estilo*/
+    background-color: #0F172A;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    background-color:#2563EB ;
+    color:white;
+    /* quitar puntos */
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 10px 15px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+
+}
+
+.busqueda{
+    display: flex;
+}
+
+
+.principal{
+    flex-wrap: flex;
+    padding-bottom: 100px;
+    margin-right: +782px;
+    margin-top: -20px;
+    background-image:url(../img/hero.jpg);
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}

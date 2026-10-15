@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Mi sitio web</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+
     <header>
-        
-        <img src="img/logo.png" alt="Logo">
-        <h1>Mi sitio web</h1>
-        <p>Aprendiendo desarrollo web</p>
-        
+        <div id="icono">  <img src="img/logo.png" alt="Logo"></div>
+        <div id="encabezado">
+            <h1>Mi sitio web</h1>
+            <p>Aprendiendo desarrollo web</p>
+        </div>
+        <div>
+            <form method="POST" class="busqueda">
+                <p>
+                    <input type="text" name="busqueda" placeholder="Buscar..." required>
+                </p>
+                <button type="submit">Lupa</button>
+
+            </form>
+
+        </div>
     </header>
+
     <nav>
         <ul>
             <li><a href="#inicio">Inicio</a></li>
@@ -20,11 +35,15 @@
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
+
     <main>
-        <section> 
-            <h2>Bienvenido</h2>
-            <p>Esta es la página principal de mi sitio web.</p>
-            <p>Aquí irá el contenido más importante</p>
+
+        <section id="hero"> 
+            <div class="principal"> 
+                <h2>Bienvenido</h2>
+                <p>Esta es la página principal de mi sitio web.</p>
+                <p>Aquí irá el contenido más importante</p>
+            </div>
 
             <div class="titulo">
                 <img src="img/tarjeta1.jpg" alt="Tarjeta 1">
@@ -52,6 +71,7 @@
         </section>
         
     </main>
+
     <aside>
         <section>
             <h2>Información</h2>
@@ -82,7 +102,8 @@
 
             </form>
         </section>
-    </aside>    
+    </aside>   
+
     <footer> 
         <p>&copy; 2025 Mi sitio web. Todos los derechos reservados.</p>
     </footer>
