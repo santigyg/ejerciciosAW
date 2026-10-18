@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+} /* incluye el padding dentro del ancho */
+
+header,
+nav,
+footer {
+    width: 100%;
+}
+
 header{
     /* colocar objetos a distancia en horizontal y poner tamaño de caja */
     display:flex;
@@ -25,8 +35,13 @@ header{
     padding: 5px 15px;         /* Espacio alrededor de la lupa */
 }
 
-body{
+body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F8FAFC;
+    color: #1E293B;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav ul{
@@ -59,14 +74,85 @@ nav a{
 
 
 .principal{
-    flex-wrap: flex;
-    padding-bottom: 100px;
-    margin-right: +782px;
-    margin-top: -20px;
-    background-image:url(../img/hero.jpg);
+    width: 100%;
+    padding: 40px 20px;
+    color: white;
+    background-image: url("../img/hero.jpg");
+    background-size: cover; /* Amplia la imagen para cubrirlo todo */
+    background-position: center;
+
+    border-radius: 10px;
 }
 
-h2{
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 26px;
+}
+
+.principal h2 {
+    font-size: 40px;
+}
+
+.titulo {
+    flex: 1; /* Las tarjetas se reparten el espacio por igual */
+    min-width: 200px;
+    padding: 15px;
+
+    background-color: white;
+    border: 1px solid #CBD5E1;
+    border-radius: 10px;
+}
+
+.titulo img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+} /* Imagenes de las tarjetas con el mismo tamaño y cuadradas dentro de la tarjeta */  
+
+aside label {
+    display: block;  /* Cada etiqueta ocupa su linea */
+    margin-bottom: 5px;
+}
+
+aside input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CBD5E1;
+    border-radius: 5px;
+    font: inherit;
+}
+
+aside button {
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Forzamos el ancho del main y aside para que quepan uno al lado del otro */
+
+main {
+    width: 70%;
+    padding: 20px;
+    min-width: 0;
+} 
+
+aside {
+    width: 30%;
+    padding: 20px;
+}
+
+footer {
+    background-color: #0F172A;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
