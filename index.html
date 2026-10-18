@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mi sitio web</title>
+    <title>Reservas Madrid</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -12,8 +12,8 @@
     <header>
         <div id="icono">  <img src="img/logo-invertido.jpg" alt="Logo"></div>
         <div id="encabezado">
-            <h1>Mi sitio web</h1>
-            <p>Aprendiendo desarrollo web</p>
+            <h1>Reservas Madrid</h1>
+            <p>La web más famosas de turismo internacional</p>
         </div>
         <div>
             <form method="POST" class="busqueda">
@@ -40,25 +40,49 @@
 
         <section id="hero"> 
             <div class="principal"> 
-                <h2>Bienvenido</h2>
-                <p>Esta es la página principal de mi sitio web.</p>
-                <p>Aquí irá el contenido más importante.</p>
+                <h2>Bienvenido al portal de reservas.</h2>
+                <p>Tours guiados por todo Madrid.</p>
+                <p>Calidad garantizada.</p>
             </div>
 
             <div class="titulo">
                 <img src="img/tarjeta1.jpg" alt="Tarjeta 1">
-                <h3>Título 1</h3>
-                <p>Breve descripción del contenido</p>
+                <h3>Plaza Mayor</h3>
+                <p>Tour guiado por la Plaza Mayor.</p>
+                <button class="reserva"> Reservar </button>
             </div>
             <div class="titulo">
                 <img src="img/tarjeta2.jpg" alt="Tarjeta 2">
-                <h3>Título 2</h3>
-                <p>Breve descripción del contenido</p>
+                <h3>Palacio Real</h3>
+                <p>Tour guiado por el Palacio Real.</p>
+                <button class="reserva"> Reservar </button>
             </div>
             <div class="titulo">
                 <img src="img/tarjeta3.jpg" alt="Tarjeta 3">
-                <h3>Título 3</h3>
-                <p>Breve descripción del contenido</p>
+                <h3>Calles de Madrid</h3>
+                <p>Recorrido por calles famosas.</p>
+                <button class="reserva"> Reservar </button>
+            </div>
+            <div class="reservar">
+                <form id="reservas">
+                    <p>
+                        <label for="seleccion-visitas">Visita:</label>
+                        <select id="seleccion-visitas" name="visita">
+                            <option value="0">...</option>
+                            <option value="12">Plaza Mayor (12 €)</option>
+                            <option value="15">Palacio Real (15 €)</option>
+                            <option value="10">Calles de Madrid (10 €)</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <!--he puesto minimo 1 porque multiplicar por 0 me estaba dando problemas creo-->
+                        <label for="personas">Personas:</label>
+                        <input type="number" id="personas" name="personas" value="1" min="1" max="20" required> 
+                    </p>
+
+                    <button type="button" id="boton-reservar" class="reserva">Reservar visita</button>
+                </form>
             </div>
         </section>
         <section>
@@ -107,5 +131,6 @@
     <footer> 
         <p>&copy; 2025 Mi sitio web. Todos los derechos reservados.</p>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>

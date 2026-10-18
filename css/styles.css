@@ -105,7 +105,7 @@ h2 {
     padding: 15px;
 
     background-color: white;
-    border: 1px solid #CBD5E1;
+    border: 1px solid #2563EB;
     border-radius: 10px;
 }
 
@@ -124,7 +124,7 @@ aside label {
 aside input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #CBD5E1;
+    border: 1px solid #2563EB;
     border-radius: 5px;
     font: inherit;
 }
@@ -155,4 +155,21 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+.reserva{
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.reservar {
+    background-color: white;
+    border: 1px solid #2563EB;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 400px;
 }
